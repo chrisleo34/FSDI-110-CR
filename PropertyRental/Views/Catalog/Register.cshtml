@@ -1,0 +1,105 @@
+@{
+	ViewData["Title"] = "Register Property";
+}
+
+<div class="row justify-content-center">
+<div class="col-md-9">
+	<div class="card">
+<header class="card-header">
+		<a href="" class="float-right btn btn-outline-primary mt-1">Log in</a>
+		<h4 class="card-title mt-2">Register Property</h4>
+</header>
+<article class="card-body">
+
+<form>
+	<div class="form-group">
+		<div class="col form-group">
+			<label>Property Name </label>   
+		  	<input id="txtName" type="text" class="form-control" placeholder="">
+		</div> <!-- form-group end.// -->
+	</div> <!-- form-row end.// -->
+	
+	<div  class="form-group form-check form-check-inline">
+		<label class="col-md-6"  > Rooms </label>
+        <label>
+		  <select id="txtRooms" class="form-control">
+		    <option> Choose...</option>
+		      <option>1+</option>
+		      <option>2+</option>
+		      <option>3+</option>
+		  </select>
+	</div> <!-- form-group end.// -->
+	
+    <div class="form-group  form-check form-check-inline">
+		<label class="col-md-6" > Bathrooms </label>
+        <label>
+		  <select id="txtBathrooms" class="form-control">
+		    <option> Choose...</option>
+		      <option>1+</option>
+		      <option>2+</option>
+		      <option>3+</option>
+		  </select>
+	</div> <!-- form-group end.// -->
+    
+	<div class="form-group">
+		<label >Description</label>
+	    <input id="txtDescription" class="form-control" type="text">
+	</div> <!-- form-group end.// --> 
+    
+    <div class="form-group">
+		<label >Property Price</label>
+	    <input id="txtPrice" class="form-control" type="text">
+	</div> <!-- form-group end.// -->  
+    
+    <div class="form-group">
+		<label >Property SqrFeet</label>
+	    <input id="txtSqrFeet" class="form-control" type="text">
+	</div> <!-- form-group end.// -->  
+    
+	<div class="form-row">
+		<div class="form-group col-md-6">
+		  <label>City</label>
+		  <input type="text" class="form-control">
+		</div> <!-- form-group end.// -->
+        
+		<div class="form-group col-md-6">
+		  <label>Country</label>
+		  <select id="inputState" class="form-control">
+		    <option> Choose...</option>
+		      <option>Uzbekistan</option>
+		      <option>Russia</option>
+		      <option selected="">United States</option>
+		      <option>India</option>
+		      <option>Afganistan</option>
+		  </select>
+		</div> <!-- form-group end.// -->
+        
+	</div> <!-- form-row.// -->
+	<div  class="form-group">
+		<label>image</label>
+	    <input id="txtImage" class="form-control" type="text">
+	</div> <!-- form-group end.// --> 
+     
+     <div class="form-group">
+		<label>Email address for confirmation</label>
+		<input id="txtEmail" type="email" class="form-control" placeholder="">
+		<small class="form-text text-muted">We'll never share your email with anyone else.</small>
+	</div> <!-- form-group end.// -->
+    
+    <div class="form-group">
+        <button id="btnSave" type="button" class="btn btn-primary btn-block"> Register </button>
+    </div> <!-- form-group// -->      
+    <small class="text-muted">By clicking the 'Register' button, you confirm that you accept our Terms of use and Privacy Policy.</small>                                          
+</form>
+</article> <!-- card-body end .// -->
+
+<div class="border-top card-body text-center">Have an account? <a href="">Log In</a></div>
+</div> <!-- card.// -->
+</div> <!-- col.//-->
+
+</div> <!-- row.//-->
+
+
+@section Scripts {
+    <script src="/js/register.js"></script>
+}
